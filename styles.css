@@ -1,0 +1,236 @@
+/* essentials */
+html, body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kanit';
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.nav li a{
+    color: white;
+}
+h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+h3{
+    margin: 4px 0;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+/* header */
+#header, .links .nav{
+    display: flex;
+}
+#header{
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 48px;
+    font-family: 'Kanit';
+    background-color: #6D42CC;
+    color: white;
+}
+
+#header .logo a{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    font-family: "Georama";
+}
+.nav{
+    gap: 24px;
+    font-size: 1.2rem;
+}
+.nav li{
+    border-bottom: 1px solid transparent;
+}
+.nav li:hover{
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+/* about */
+#about{
+    height: 70vh;
+    display: flex;
+    gap: 100px;
+    background-color: #272829;
+    color: white;
+    padding: 48px;
+    align-items: center;
+    justify-content: center;
+}
+#about .left-about h1{
+    font-size: 2.5rem;
+    margin: 0 0 12px 0;
+}
+#about .left-about button{
+    width: 200px;
+    padding: 12px;
+    margin-top: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid #6D42CC;
+}
+#about .left-about button:hover{
+    background-color: #6D42CC;
+}
+#hero-img{
+    height: 400px;
+}
+.left-about p{
+    margin: 0;
+}
+
+/* services */
+#services{
+    background-color: #F5F5F5;
+    padding: 12px 48px;
+    height: 70vh;
+}
+.services-container{
+    display: flex;
+    gap: 12px;
+}
+.icon-container{
+    background-color: #6D42CC;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+}
+.services-card p{
+    margin-top: 0;
+    color: #1F2937;
+}
+
+/* portfolio */
+#portfolio{
+    padding: 0 48px 48px 48px;
+}
+.portfolio-container{
+    display: flex;
+    justify-content: space-around;
+}
+.portfolio-card{
+    width: 360px;
+    border: 2px solid gainsboro;
+    border-radius: 4px;
+    transition: 0.3s all ease-in-out;
+}
+.portfolio-card:hover{
+    transform: scale(1.05);
+}
+.portfolio-card img{
+    width: 360px;
+}
+.portfolio-card h3, .portfolio-card p{
+    margin: 12px;
+}
+.portfolio-card p{
+    margin-top: 0;
+}
+.portfolio-container a{
+    color: black;
+}
+.portfolio-container a p{
+    color: #1F2937;
+}
+
+/* testimonials */
+#testimonials{
+    background-color: #F5F5F5;
+    height: 75vh;
+}
+.testimonials-container{
+    display: flex;
+    justify-content: space-around;
+}
+.testimonials-card{
+    width: 300px;
+}
+.testimonials-card p.quote{
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #454545;
+}
+.testimonials-card p.client{
+    text-align: right;
+    font-weight: bolder;
+}
+
+/* contact */
+
+#contact{
+    height: 70vh;
+}
+.contact-container{
+    background-color: #272829;
+    color: white;
+    margin: 0 64px;
+    padding: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact-container .contact-txt h3, .contact-container .contact-txt p{
+    margin: 0;
+}
+.contact-container .contact-txt h3{
+    font-size: 1.75rem;
+}
+.contact-container .contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.contact-form input{
+    width: 300px;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+.contact-container button{
+    width: 140px;
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid #6D42CC;
+    border-radius: 6px;
+    background-color: transparent;
+    color: white;
+}
+.contact-container button:hover{
+    background-color: #6D42CC;
+}
+
+/* footer */
+#footer{
+    background-color: #6D42CC;
+    color: white;
+    padding: 16px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-icons{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.footer-icons a{
+    color: white;
+}
